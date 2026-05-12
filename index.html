@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Art of JavaScript — A Modern Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<div class="scroll-progress"><div class="scroll-fill" id="scrollFill"></div></div>
+<div class="overlay" id="overlay"></div>
+ 
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="book-badge">JavaScript</div>
+    <div class="book-title">The Art of JavaScript</div>
+    <div class="book-subtitle">A Modern Developer's Guide</div>
+  </div>
+  <nav class="chapter-list" id="chapterList"></nav>
+  <div class="sidebar-footer">
+    <div class="progress-wrap">
+      <div class="progress-label">Progress</div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">☀</button>
+  </div>
+</aside>
+ 
+<!-- Main -->
+<main class="main">
+  <div class="topbar">
+    <div class="topbar-left">
+      <button class="hamburger" id="hamburger" aria-label="Toggle sidebar">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="breadcrumb" id="breadcrumb">Chapter <span id="chBreadcrumb">01</span></div>
+    </div>
+    <div class="topbar-right">
+      <div class="reading-time" id="readingTime">~5 min read</div>
+    </div>
+  </div>
+
+  
+ 
+  <div class="content-wrap" id="contentWrap"></div>
+</main>
+ 
+<script src="script.js"></script>
+</body>
+</html>
